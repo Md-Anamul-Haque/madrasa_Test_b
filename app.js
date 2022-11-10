@@ -37,8 +37,8 @@ app.use('/api/admin',adminApi)
 app.use('/api',jsonApis)
 
 app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname,'public','index.html'));
-    // res.send("hello")
+    // res.sendFile(path.join(__dirname,'public','index.html'));
+    res.send("hello")
   });
 
 
