@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 const config = require("./config");
-const dbURL = 'mongodb://localhost:27017/madrasaumarDB' || config.db.url;
+// const dbURL = 'mongodb://localhost:27017/madrasaumarDB' || config.db.url;
+const dbURL =config.db.url;
 
 const connectDatabase = async () => {
   try {
